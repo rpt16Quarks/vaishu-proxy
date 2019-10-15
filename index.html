@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxy</title>
+</head>
+
+<body>
+  <div id="app">Matt</div>
+  <div id='product-description'></div>
+  <div id="reviews">Matt</div>
+  <script crossorigin src="https://unpkg.com/react@16.9.0/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16.9.0/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/4.2.0/styled-components.min.js"></script>
+  <script src="http://localhost:3004/app.bundle.js"> </script>
+  <script src="http://localhost:3003/app.js"> </script>
+  <script src="http://localhost:3005/bundle.js"> </script>
+  <script>
+    ReactDOM.render(
+      React.createElement(App),
+      document.getElementById('product-description')
+    );
+  </script>
+</body>
+</html>
